@@ -69,11 +69,9 @@ F 3 "" H 7375 2400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6525 3675 6850 3675
+	6850 3675 6525 3675
 Wire Wire Line
-	6850 3675 6850 2300
-Wire Wire Line
-	6750 2300 7175 2300
+	6850 2150 6850 3675
 Wire Wire Line
 	6525 3825 6950 3825
 Wire Wire Line
@@ -104,9 +102,9 @@ Wire Wire Line
 Wire Wire Line
 	4450 1725 7075 1725
 Wire Wire Line
-	4625 4525 4275 4525
+	4275 4525 4625 4525
 Wire Wire Line
-	4275 4525 4275 1625
+	4275 1625 4275 4525
 Wire Wire Line
 	4275 1625 7075 1625
 Wire Wire Line
@@ -143,18 +141,101 @@ Connection ~ 6650 1625
 Wire Wire Line
 	6750 1800 6750 1725
 Connection ~ 6750 1725
-Wire Wire Line
-	6750 2100 6750 2300
 Connection ~ 6850 2300
+Text Notes 7450 2300 0    60   ~ 0
+RESET
+Text Notes 7450 2400 0    60   ~ 0
+RX
+Text Notes 7450 2500 0    60   ~ 0
+TX
+Text Notes 7325 1625 0    60   ~ 0
+GND
+Text Notes 7325 1725 0    60   ~ 0
+VCC
+Text GLabel 8400 2875 0    60   Input ~ 0
+VCC
+Text GLabel 5650 1850 3    60   Input ~ 0
+VCC
+Wire Wire Line
+	5650 1850 5650 1725
+Connection ~ 5650 1725
 $Comp
-L Conn_02x05_Counter_Clockwise J?
-U 1 1 5C6C7C83
-P 8675 3025
-F 0 "J?" H 8725 3325 50  0000 C CNN
-F 1 "Conn_02x05_Counter_Clockwise" H 8725 2725 50  0000 C CNN
-F 2 "" H 8675 3025 50  0001 C CNN
-F 3 "" H 8675 3025 50  0001 C CNN
-	1    8675 3025
+L GND #PWR02
+U 1 1 5C745377
+P 8700 3675
+F 0 "#PWR02" H 8700 3425 50  0001 C CNN
+F 1 "GND" H 8700 3525 50  0000 C CNN
+F 2 "" H 8700 3675 50  0001 C CNN
+F 3 "" H 8700 3675 50  0001 C CNN
+	1    8700 3675
 	1    0    0    -1  
 $EndComp
+$Comp
+L Conn_02x05_Odd_Even J3
+U 1 1 5C74551B
+P 8875 3175
+F 0 "J3" H 8925 3475 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 8925 2875 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 8875 3175 50  0001 C CNN
+F 3 "" H 8875 3175 50  0001 C CNN
+	1    8875 3175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9175 2975 9350 2975
+Wire Wire Line
+	9350 2975 9350 2775
+Wire Wire Line
+	9350 2775 8525 2775
+Wire Wire Line
+	8525 2775 8525 2975
+Wire Wire Line
+	8525 2975 8675 2975
+Wire Wire Line
+	8400 2875 8525 2875
+Connection ~ 8525 2875
+Wire Wire Line
+	8675 3375 8375 3375
+Wire Wire Line
+	8375 3375 8375 3575
+Wire Wire Line
+	8375 3575 9450 3575
+Wire Wire Line
+	9450 3575 9450 3375
+Wire Wire Line
+	9450 3375 9175 3375
+Wire Wire Line
+	8700 3675 8700 3575
+Connection ~ 8700 3575
+Text GLabel 8675 3075 0    60   Input ~ 0
+CE
+Text GLabel 6525 4525 2    60   Input ~ 0
+CE
+Text GLabel 9175 3075 2    60   Input ~ 0
+CSN
+Text GLabel 6525 2225 2    60   Input ~ 0
+CSN
+Wire Wire Line
+	6850 2300 7175 2300
+Wire Wire Line
+	6750 2100 6750 2150
+Wire Wire Line
+	6750 2150 6850 2150
+Text GLabel 8475 3175 0    60   Input ~ 0
+SCK
+Wire Wire Line
+	8475 3175 8675 3175
+Text GLabel 6525 2725 2    60   Input ~ 0
+SCK
+Text GLabel 9450 3175 2    60   Input ~ 0
+MO
+Wire Wire Line
+	9175 3175 9450 3175
+Text GLabel 6525 2525 2    60   Input ~ 0
+MO
+Text GLabel 8675 3275 0    60   Input ~ 0
+MI
+Text GLabel 6525 2625 2    60   Input ~ 0
+MI
+NoConn ~ 9175 3275
 $EndSCHEMATC
