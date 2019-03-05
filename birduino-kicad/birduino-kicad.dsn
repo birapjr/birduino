@@ -53,10 +53,13 @@
       (place J3 156210 -118618 front 90 (PN Conn_02x05_Odd_Even))
     )
     (component "Buttons_Switches_THT:SW_TH_Tactile_Omron_B3F-10xx"
-      (place SW1 142748 -74676 front 0 (PN SW_Push_Dual))
-      (place SW2 155448 -74676 front 0 (PN SW_Push_Dual))
-      (place SW3 167132 -74676 front 0 (PN SW_Push_Dual))
-      (place SW4 155448 -63500 front 0 (PN SW_Push_Dual))
+      (place SW1 143764 -77216 front 0 (PN SW_Push_Dual))
+      (place SW2 155956 -77216 front 0 (PN SW_Push_Dual))
+      (place SW3 167386 -77216 front 0 (PN SW_Push_Dual))
+      (place SW4 156464 -66548 front 0 (PN SW_Push_Dual))
+    )
+    (component Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm
+      (place J4 163830 -61468 front 270 (PN Conn_01x04))
     )
   )
   (library
@@ -211,6 +214,27 @@
       (pin Round[A]Pad_1700_um 2 6500 0)
       (pin Round[A]Pad_1700_um 1 0 0)
     )
+    (image Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  1270 1270  1270 -8890))
+      (outline (path signal 100  1270 -8890  -1270 -8890))
+      (outline (path signal 100  -1270 -8890  -1270 635))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 120  -1330 -8950  1330 -8950))
+      (outline (path signal 120  -1330 -1270  -1330 -8950))
+      (outline (path signal 120  1330 -1270  1330 -8950))
+      (outline (path signal 120  -1330 -1270  1330 -1270))
+      (outline (path signal 120  -1330 0  -1330 1330))
+      (outline (path signal 120  -1330 1330  0 1330))
+      (outline (path signal 50  -1800 1800  -1800 -9400))
+      (outline (path signal 50  -1800 -9400  1800 -9400))
+      (outline (path signal 50  1800 -9400  1800 1800))
+      (outline (path signal 50  1800 1800  -1800 1800))
+      (pin Rect[A]Pad_1700x1700_um 1 0 0)
+      (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
+      (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
+      (pin Oval[A]Pad_1700x1700_um 4 0 -7620)
+    )
     (padstack Round[A]Pad_1400_um
       (shape (circle F.Cu 1400))
       (shape (circle B.Cu 1400))
@@ -263,10 +287,10 @@
       (pins U1-3 J1-3)
     )
     (net GND
-      (pins U1-8 U1-22 J2-1 J3-9 J3-10 R2-1 R3-1 R4-1 R5-1)
+      (pins U1-8 U1-22 J2-1 J3-9 J3-10 R2-1 R3-1 R4-1 R5-1 J4-2)
     )
     (net VCC
-      (pins U1-20 U1-7 J2-2 R1-2 J3-1 J3-2 SW1-2 SW2-2 SW3-2 SW4-2)
+      (pins U1-20 U1-7 J2-2 R1-2 J3-1 J3-2 SW1-2 SW2-2 SW3-2 SW4-2 J4-1)
     )
     (net CE
       (pins U1-13 J3-3)
@@ -307,13 +331,18 @@
     (net BT4
       (pins U1-11 SW4-1)
     )
+    (net SCL
+      (pins U1-28 J4-3)
+    )
+    (net SDA
+      (pins U1-27 J4-4)
+    )
     (class kicad_default "" BT1 BT2 BT3 BT4 CE CSN GND MI MO "Net-(J1-Pad1)"
       "Net-(J1-Pad2)" "Net-(J1-Pad3)" "Net-(J3-Pad8)" "Net-(R2-Pad2)" "Net-(R3-Pad2)"
       "Net-(R4-Pad2)" "Net-(R5-Pad2)" "Net-(SW1-Pad3)" "Net-(SW2-Pad3)" "Net-(SW3-Pad3)"
       "Net-(SW4-Pad3)" "Net-(U1-Pad10)" "Net-(U1-Pad12)" "Net-(U1-Pad15)"
       "Net-(U1-Pad16)" "Net-(U1-Pad21)" "Net-(U1-Pad23)" "Net-(U1-Pad24)"
-      "Net-(U1-Pad25)" "Net-(U1-Pad26)" "Net-(U1-Pad27)" "Net-(U1-Pad28)"
-      "Net-(U1-Pad9)" SCK VCC
+      "Net-(U1-Pad25)" "Net-(U1-Pad26)" "Net-(U1-Pad9)" SCK SCL SDA VCC
       (circuit
         (use_via Via[0-1]_600:400_um)
       )
