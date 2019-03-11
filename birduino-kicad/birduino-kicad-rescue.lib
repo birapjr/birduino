@@ -1,76 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Sensor_Temperature_DS18B20
+# ATMEGA328-PU
 #
-DEF Sensor_Temperature_DS18B20 U 0 40 Y Y 1 F N
-F0 "U" -150 250 50 H V C CNN
-F1 "Sensor_Temperature_DS18B20" 250 250 50 H V C CNN
-F2 "Package_TO_SOT_THT:TO-92_Inline" -1000 -250 50 H I C CNN
-F3 "" -150 250 50 H I C CNN
-ALIAS DS1822 DS18B20 DS18S20 DS1821C
-$FPLIST
- TO*92*
-$ENDFPLIST
-DRAW
-A -130 125 25 1 1799 0 1 10 N -105 125 -155 125
-C -130 -100 50 0 1 10 F
-S -200 200 200 -200 0 1 10 f
-S -105 -75 -155 0 0 1 10 F
-P 2 0 1 10 -155 25 -130 25 N
-P 2 0 1 10 -155 50 -130 50 N
-P 2 0 1 10 -155 75 -130 75 N
-P 2 0 1 10 -155 100 -130 100 N
-P 2 0 1 10 -155 125 -155 0 N
-P 2 0 1 10 -155 125 -130 125 N
-P 2 0 1 10 -105 125 -105 0 N
-X GND 1 0 -300 100 U 50 50 1 1 W
-X DQ 2 300 0 100 L 50 50 1 1 B
-X VDD 3 0 300 100 D 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# Transistor_FET_2N7000
-#
-DEF Transistor_FET_2N7000 Q 0 0 Y N 1 F N
-F0 "Q" 200 75 50 H V L CNN
-F1 "Transistor_FET_2N7000" 200 0 50 H V L CNN
-F2 "Package_TO_SOT_THT:TO-92_Inline" 200 -75 50 H I L CIN
-F3 "" 0 0 50 H I L CNN
-ALIAS TP0610L VP0610L
-$FPLIST
- TO?92*
-$ENDFPLIST
-DRAW
-C 65 0 111 0 1 10 N
-C 100 -70 11 0 1 0 F
-C 100 70 11 0 1 0 F
-P 2 0 1 0 -100 0 10 0 N
-P 2 0 1 0 30 -70 100 -70 N
-P 2 0 1 10 30 -50 30 -90 N
-P 2 0 1 0 30 0 100 0 N
-P 2 0 1 10 30 20 30 -20 N
-P 2 0 1 0 30 70 100 70 N
-P 2 0 1 10 30 90 30 50 N
-P 2 0 1 0 100 -70 100 -100 N
-P 2 0 1 0 100 -70 100 0 N
-P 2 0 1 0 100 100 100 70 N
-P 3 0 1 10 10 75 10 -75 10 -75 N
-P 4 0 1 0 40 0 80 15 80 -15 40 0 F
-P 4 0 1 0 100 -70 130 -70 130 70 100 70 N
-P 4 0 1 0 110 20 115 15 145 15 150 10 N
-P 4 0 1 0 130 15 115 -10 145 -10 130 15 N
-X S 1 100 -200 100 U 50 50 1 1 P
-X G 2 -200 0 100 R 50 50 1 1 I
-X D 3 100 200 100 D 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# birduino-kicad-rescue_ATMEGA328-PU
-#
-DEF birduino-kicad-rescue_ATMEGA328-PU U 0 40 Y Y 1 F N
+DEF ATMEGA328-PU U 0 40 Y Y 1 F N
 F0 "U" -750 1250 50 H V L BNN
-F1 "birduino-kicad-rescue_ATMEGA328-PU" 400 -1400 50 H V L BNN
+F1 "ATMEGA328-PU" 400 -1400 50 H V L BNN
 F2 "DIL28" 0 0 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -110,11 +45,11 @@ X (PCINT6/XTAL1/TOSC1)PB6 9 1000 500 150 L 40 40 1 1 B
 ENDDRAW
 ENDDEF
 #
-# birduino-kicad-rescue_Conn_01x02_Male
+# Conn_01x02_Male
 #
-DEF birduino-kicad-rescue_Conn_01x02_Male J 0 40 Y N 1 F N
+DEF Conn_01x02_Male J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "birduino-kicad-rescue_Conn_01x02_Male" 0 -200 50 H V C CNN
+F1 "Conn_01x02_Male" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -133,11 +68,11 @@ X Pin_2 2 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# birduino-kicad-rescue_Conn_01x03_Male
+# Conn_01x03_Male
 #
-DEF birduino-kicad-rescue_Conn_01x03_Male J 0 40 Y N 1 F N
+DEF Conn_01x03_Male J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "birduino-kicad-rescue_Conn_01x03_Male" 0 -200 50 H V C CNN
+F1 "Conn_01x03_Male" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -159,11 +94,11 @@ X Pin_3 3 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# birduino-kicad-rescue_Conn_01x04
+# Conn_01x04
 #
-DEF birduino-kicad-rescue_Conn_01x04 J 0 40 Y N 1 F N
+DEF Conn_01x04 J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "birduino-kicad-rescue_Conn_01x04" 0 -300 50 H V C CNN
+F1 "Conn_01x04" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -187,11 +122,11 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# birduino-kicad-rescue_Conn_02x05_Odd_Even
+# Conn_02x05_Odd_Even
 #
-DEF birduino-kicad-rescue_Conn_02x05_Odd_Even J 0 40 Y N 1 F N
+DEF Conn_02x05_Odd_Even J 0 40 Y N 1 F N
 F0 "J" 50 300 50 H V C CNN
-F1 "birduino-kicad-rescue_Conn_02x05_Odd_Even" 50 -300 50 H V C CNN
+F1 "Conn_02x05_Odd_Even" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -227,11 +162,11 @@ X Pin_9 9 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# birduino-kicad-rescue_R
+# R
 #
-DEF birduino-kicad-rescue_R R 0 0 N Y 1 F N
+DEF R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "birduino-kicad-rescue_R" 0 0 50 V V C CNN
+F1 "R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -245,11 +180,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# birduino-kicad-rescue_SW_Push_Dual
+# SW_Push_Dual
 #
-DEF birduino-kicad-rescue_SW_Push_Dual SW 0 40 Y N 1 F N
+DEF SW_Push_Dual SW 0 40 Y N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "birduino-kicad-rescue_SW_Push_Dual" 0 -270 50 H V C CNN
+F1 "SW_Push_Dual" 0 -270 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW
@@ -269,19 +204,6 @@ X 1 1 -200 0 100 R 50 50 0 1 P
 X 2 2 200 0 100 L 50 50 0 1 P
 X 3 3 -200 -200 100 R 50 50 0 1 P
 X 4 4 200 -200 100 L 50 50 0 1 P
-ENDDRAW
-ENDDEF
-#
-# power_GND
-#
-DEF power_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

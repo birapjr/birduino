@@ -1,3 +1,4 @@
 # Temporary files
 *.bak
 *.kicad_pcb-bak
+rescue-backup

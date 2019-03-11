@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name birduino-kicad-rescue)(type Legacy)(uri ${KIPRJMOD}/birduino-kicad-rescue.lib)(options "")(descr ""))
+)
