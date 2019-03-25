@@ -684,4 +684,171 @@ Text GLabel 6525 3175 2    50   Input ~ 0
 LED2
 Text GLabel 6525 3275 2    50   Input ~ 0
 LED3
+$Comp
+L Connector:Conn_01x01_Male J6
+U 1 1 5C995BFC
+P 2025 1900
+F 0 "J6" H 2131 2078 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2131 1987 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2025 1900 50  0001 C CNN
+F 3 "~" H 2025 1900 50  0001 C CNN
+	1    2025 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J7
+U 1 1 5C9966C3
+P 3275 1900
+F 0 "J7" H 3381 2078 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 3381 1987 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3275 1900 50  0001 C CNN
+F 3 "~" H 3275 1900 50  0001 C CNN
+	1    3275 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J5
+U 1 1 5C99677B
+P 2000 3450
+F 0 "J5" H 2106 3628 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2106 3537 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2000 3450 50  0001 C CNN
+F 3 "~" H 2000 3450 50  0001 C CNN
+	1    2000 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2225 2025 2225 1900
+Wire Wire Line
+	3475 2050 3475 1900
+Wire Wire Line
+	2200 3575 2200 3450
+Wire Notes Line
+	1750 1875 1750 1675
+Wire Notes Line
+	1750 1675 2500 1675
+Wire Notes Line
+	2500 1675 2500 1875
+Text Notes 1950 1650 0    50   ~ 0
+LED Array1
+Wire Notes Line
+	3000 1875 3000 1675
+Wire Notes Line
+	3000 1675 3750 1675
+Wire Notes Line
+	3750 1675 3750 1875
+Text Notes 3200 1650 0    50   ~ 0
+LED Array2
+Wire Notes Line
+	1725 3425 1725 3225
+Wire Notes Line
+	1725 3225 2475 3225
+Wire Notes Line
+	2475 3225 2475 3425
+Text Notes 1925 3200 0    50   ~ 0
+LED Array3
+Text GLabel 4000 5325 2    50   Input ~ 0
+VCC
+Text GLabel 3500 5425 0    50   Input ~ 0
+SCL
+Text GLabel 4000 5425 2    50   Input ~ 0
+SDA
+$Comp
+L power:GND #PWR0105
+U 1 1 5C9B4293
+P 3325 5325
+F 0 "#PWR0105" H 3325 5075 50  0001 C CNN
+F 1 "GND" V 3330 5197 50  0000 R CNN
+F 2 "" H 3325 5325 50  0001 C CNN
+F 3 "" H 3325 5325 50  0001 C CNN
+	1    3325 5325
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	2975 5025 4325 5025
+Wire Notes Line
+	4325 5025 4325 5600
+Wire Notes Line
+	4325 5600 2975 5600
+Wire Notes Line
+	2975 5600 2975 5025
+Text Notes 4025 5000 2    50   ~ 0
+Chirp humidity sensor
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J8
+U 1 1 5C9C2C91
+P 3700 5325
+F 0 "J8" H 3750 5542 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 3750 5451 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 3700 5325 50  0001 C CNN
+F 3 "~" H 3700 5325 50  0001 C CNN
+	1    3700 5325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3325 5325 3500 5325
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 5C9D2908
+P 3600 6050
+F 0 "J9" H 3680 6042 50  0000 L CNN
+F 1 "Conn_01x02" H 3680 5951 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3600 6050 50  0001 C CNN
+F 3 "~" H 3600 6050 50  0001 C CNN
+	1    3600 6050
+	1    0    0    -1  
+$EndComp
+Text GLabel 3400 6050 0    50   Input ~ 0
+PUMP
+$Comp
+L power:GND #PWR0106
+U 1 1 5C9D2AF1
+P 3400 6150
+F 0 "#PWR0106" H 3400 5900 50  0001 C CNN
+F 1 "GND" V 3405 6022 50  0000 R CNN
+F 2 "" H 3400 6150 50  0001 C CNN
+F 3 "" H 3400 6150 50  0001 C CNN
+	1    3400 6150
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	2975 5900 4200 5900
+Wire Notes Line
+	4200 5900 4200 6275
+Wire Notes Line
+	4200 6275 2975 6275
+Wire Notes Line
+	2975 6275 2975 5900
+Text Notes 3550 5875 2    50   ~ 0
+Water Level
+Text GLabel 6525 3375 2    50   Input ~ 0
+PUMP
+NoConn ~ 4625 2825
+NoConn ~ 6525 2825
+NoConn ~ 6525 2925
+$Comp
+L Connector:Conn_01x01_Male J10
+U 1 1 5C9DF6BE
+P 1775 5675
+F 0 "J10" H 1881 5853 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1881 5762 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1775 5675 50  0001 C CNN
+F 3 "~" H 1775 5675 50  0001 C CNN
+	1    1775 5675
+	1    0    0    -1  
+$EndComp
+Text GLabel 2175 5675 2    50   Input ~ 0
+FREE
+Wire Wire Line
+	1975 5675 2175 5675
+Text GLabel 6525 4425 2    50   Input ~ 0
+FREE
+Wire Notes Line
+	1500 5450 2450 5450
+Wire Notes Line
+	2450 5450 2450 5775
+Wire Notes Line
+	2450 5775 1500 5775
+Wire Notes Line
+	1500 5775 1500 5450
 $EndSCHEMATC
