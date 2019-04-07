@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1089)
+    (start_pass_no 1146)
     (layer_rule F.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.6)
+      (against_preferred_direction_trace_costs 2.5)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.6)
+      (against_preferred_direction_trace_costs 1.7)
     )
   )
   (rule
@@ -66,7 +66,7 @@
     "Net-(J1-Pad1)" "Net-(J1-Pad2)" "Net-(J1-Pad3)" GND VCC CE CSN SCK
     MO MI BT1 BT2 BT3 BT4 SCL SDA
     TEMP LED3 LED1 LED2 "Net-(J5-Pad1)" "Net-(J6-Pad1)" "Net-(J7-Pad1)" PUMP
-    FREE
+    FREE "Net-(C1-Pad1)" /StepUp5V/5V "Net-(D1-Pad2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

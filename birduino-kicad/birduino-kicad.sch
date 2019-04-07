@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "Birduino"
 Date "09.03.2018"
 Rev "1.0"
@@ -79,164 +79,164 @@ Text Notes 7325 1625 0    60   ~ 0
 GND
 Text Notes 7325 1725 0    60   ~ 0
 VCC
-Text GLabel 8400 2875 0    60   Input ~ 0
+Text GLabel 9600 850  0    60   Input ~ 0
 VCC
 Text GLabel 5650 1850 3    60   Input ~ 0
 VCC
 $Comp
 L power:GND #PWR02
 U 1 1 5C745377
-P 8700 3675
-F 0 "#PWR02" H 8700 3425 50  0001 C CNN
-F 1 "GND" H 8700 3525 50  0000 C CNN
-F 2 "" H 8700 3675 50  0001 C CNN
-F 3 "" H 8700 3675 50  0001 C CNN
-	1    8700 3675
+P 9900 1650
+F 0 "#PWR02" H 9900 1400 50  0001 C CNN
+F 1 "GND" H 9900 1500 50  0000 C CNN
+F 2 "" H 9900 1650 50  0001 C CNN
+F 3 "" H 9900 1650 50  0001 C CNN
+	1    9900 1650
 	1    0    0    -1  
 $EndComp
 $Comp
 L birduino-kicad-rescue:Conn_02x05_Odd_Even J3
 U 1 1 5C74551B
-P 8875 3175
-F 0 "J3" H 8925 3475 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 8925 2875 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 8875 3175 50  0001 C CNN
-F 3 "" H 8875 3175 50  0001 C CNN
-	1    8875 3175
+P 10075 1150
+F 0 "J3" H 10125 1450 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 10125 850 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 10075 1150 50  0001 C CNN
+F 3 "" H 10075 1150 50  0001 C CNN
+	1    10075 1150
 	1    0    0    -1  
 $EndComp
-Text GLabel 8675 3075 0    60   Input ~ 0
+Text GLabel 9875 1050 0    60   Input ~ 0
 CE
 Text GLabel 6525 4525 2    60   Input ~ 0
 CE
-Text GLabel 9175 3075 2    60   Input ~ 0
+Text GLabel 10375 1050 2    60   Input ~ 0
 CSN
 Text GLabel 6525 2225 2    60   Input ~ 0
 CSN
-Text GLabel 8475 3175 0    60   Input ~ 0
+Text GLabel 9675 1150 0    60   Input ~ 0
 SCK
 Text GLabel 6525 2725 2    60   Input ~ 0
 SCK
-Text GLabel 9450 3175 2    60   Input ~ 0
+Text GLabel 10650 1150 2    60   Input ~ 0
 MO
 Text GLabel 6525 2525 2    60   Input ~ 0
 MO
-Text GLabel 8675 3275 0    60   Input ~ 0
+Text GLabel 9875 1250 0    60   Input ~ 0
 MI
 Text GLabel 6525 2625 2    60   Input ~ 0
 MI
-NoConn ~ 9175 3275
+NoConn ~ 10375 1250
 $Comp
 L birduino-kicad-rescue:SW_Push_Dual SW1
 U 1 1 5C759811
-P 8125 4250
-F 0 "SW1" H 8175 4350 50  0000 L CNN
-F 1 "SW_Push_Dual" H 8125 3980 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_Tactile_Straight_KSA0Axx1LFTR" H 8125 4450 50  0001 C CNN
-F 3 "" H 8125 4450 50  0001 C CNN
-	1    8125 4250
+P 8725 2350
+F 0 "SW1" H 8775 2450 50  0000 L CNN
+F 1 "SW_Push_Dual" H 8725 2080 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_Straight_KSA0Axx1LFTR" H 8725 2550 50  0001 C CNN
+F 3 "" H 8725 2550 50  0001 C CNN
+	1    8725 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L birduino-kicad-rescue:SW_Push_Dual SW2
 U 1 1 5C759898
-P 8125 4725
-F 0 "SW2" H 8175 4825 50  0000 L CNN
-F 1 "SW_Push_Dual" H 8125 4455 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_Tactile_Straight_KSA0Axx1LFTR" H 8125 4925 50  0001 C CNN
-F 3 "" H 8125 4925 50  0001 C CNN
-	1    8125 4725
+P 8725 2825
+F 0 "SW2" H 8775 2925 50  0000 L CNN
+F 1 "SW_Push_Dual" H 8725 2555 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_Straight_KSA0Axx1LFTR" H 8725 3025 50  0001 C CNN
+F 3 "" H 8725 3025 50  0001 C CNN
+	1    8725 2825
 	1    0    0    -1  
 $EndComp
 $Comp
 L birduino-kicad-rescue:SW_Push_Dual SW3
 U 1 1 5C759957
-P 8125 5225
-F 0 "SW3" H 8175 5325 50  0000 L CNN
-F 1 "SW_Push_Dual" H 8125 4955 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_Tactile_Straight_KSA0Axx1LFTR" H 8125 5425 50  0001 C CNN
-F 3 "" H 8125 5425 50  0001 C CNN
-	1    8125 5225
+P 8725 3325
+F 0 "SW3" H 8775 3425 50  0000 L CNN
+F 1 "SW_Push_Dual" H 8725 3055 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_Straight_KSA0Axx1LFTR" H 8725 3525 50  0001 C CNN
+F 3 "" H 8725 3525 50  0001 C CNN
+	1    8725 3325
 	1    0    0    -1  
 $EndComp
 $Comp
 L birduino-kicad-rescue:SW_Push_Dual SW4
 U 1 1 5C759A68
-P 8125 5700
-F 0 "SW4" H 8175 5800 50  0000 L CNN
-F 1 "SW_Push_Dual" H 8125 5430 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_Tactile_Straight_KSA0Axx1LFTR" H 8125 5900 50  0001 C CNN
-F 3 "" H 8125 5900 50  0001 C CNN
-	1    8125 5700
+P 8725 3800
+F 0 "SW4" H 8775 3900 50  0000 L CNN
+F 1 "SW_Push_Dual" H 8725 3530 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_Straight_KSA0Axx1LFTR" H 8725 4000 50  0001 C CNN
+F 3 "" H 8725 4000 50  0001 C CNN
+	1    8725 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L birduino-kicad-rescue:R R2
 U 1 1 5C76EF22
-P 8700 4450
-F 0 "R2" V 8780 4450 50  0000 C CNN
-F 1 "10k" V 8700 4450 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 8630 4450 50  0001 C CNN
-F 3 "" H 8700 4450 50  0001 C CNN
-	1    8700 4450
+P 9300 2550
+F 0 "R2" V 9380 2550 50  0000 C CNN
+F 1 "10k" V 9300 2550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 9230 2550 50  0001 C CNN
+F 3 "" H 9300 2550 50  0001 C CNN
+	1    9300 2550
 	0    1    1    0   
 $EndComp
 $Comp
 L birduino-kicad-rescue:R R3
 U 1 1 5C76EFA9
-P 8700 4925
-F 0 "R3" V 8780 4925 50  0000 C CNN
-F 1 "10k" V 8700 4925 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 8630 4925 50  0001 C CNN
-F 3 "" H 8700 4925 50  0001 C CNN
-	1    8700 4925
+P 9300 3025
+F 0 "R3" V 9380 3025 50  0000 C CNN
+F 1 "10k" V 9300 3025 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 9230 3025 50  0001 C CNN
+F 3 "" H 9300 3025 50  0001 C CNN
+	1    9300 3025
 	0    1    1    0   
 $EndComp
 $Comp
 L birduino-kicad-rescue:R R4
 U 1 1 5C76F002
-P 8700 5425
-F 0 "R4" V 8780 5425 50  0000 C CNN
-F 1 "10k" V 8700 5425 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 8630 5425 50  0001 C CNN
-F 3 "" H 8700 5425 50  0001 C CNN
-	1    8700 5425
+P 9300 3525
+F 0 "R4" V 9380 3525 50  0000 C CNN
+F 1 "10k" V 9300 3525 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 9230 3525 50  0001 C CNN
+F 3 "" H 9300 3525 50  0001 C CNN
+	1    9300 3525
 	0    1    1    0   
 $EndComp
 $Comp
 L birduino-kicad-rescue:R R5
 U 1 1 5C76F785
-P 8700 5900
-F 0 "R5" V 8780 5900 50  0000 C CNN
-F 1 "10k" V 8700 5900 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 8630 5900 50  0001 C CNN
-F 3 "" H 8700 5900 50  0001 C CNN
-	1    8700 5900
+P 9300 4000
+F 0 "R5" V 9380 4000 50  0000 C CNN
+F 1 "10k" V 9300 4000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 9230 4000 50  0001 C CNN
+F 3 "" H 9300 4000 50  0001 C CNN
+	1    9300 4000
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR03
 U 1 1 5C76FAED
-P 9025 6075
-F 0 "#PWR03" H 9025 5825 50  0001 C CNN
-F 1 "GND" H 9025 5925 50  0000 C CNN
-F 2 "" H 9025 6075 50  0001 C CNN
-F 3 "" H 9025 6075 50  0001 C CNN
-	1    9025 6075
+P 9625 4175
+F 0 "#PWR03" H 9625 3925 50  0001 C CNN
+F 1 "GND" H 9625 4025 50  0000 C CNN
+F 2 "" H 9625 4175 50  0001 C CNN
+F 3 "" H 9625 4175 50  0001 C CNN
+	1    9625 4175
 	1    0    0    -1  
 $EndComp
-Text GLabel 8325 4250 2    60   Input ~ 0
+Text GLabel 8925 2350 2    60   Input ~ 0
 VCC
-Text GLabel 8325 4725 2    60   Input ~ 0
+Text GLabel 8925 2825 2    60   Input ~ 0
 VCC
-Text GLabel 8325 5225 2    60   Input ~ 0
+Text GLabel 8925 3325 2    60   Input ~ 0
 VCC
-Text GLabel 8325 5700 2    60   Input ~ 0
+Text GLabel 8925 3800 2    60   Input ~ 0
 VCC
-NoConn ~ 7925 4450
-NoConn ~ 7925 4925
-NoConn ~ 7925 5425
-NoConn ~ 7925 5900
+NoConn ~ 8525 2550
+NoConn ~ 8525 3025
+NoConn ~ 8525 3525
+NoConn ~ 8525 4000
 Text GLabel 6525 4025 2    60   Input ~ 0
 BT1
 Text GLabel 6525 4125 2    60   Input ~ 0
@@ -245,45 +245,45 @@ Text GLabel 6525 4225 2    60   Input ~ 0
 BT3
 Text GLabel 6525 4325 2    60   Input ~ 0
 BT4
-Text GLabel 7925 4250 0    60   Input ~ 0
+Text GLabel 8525 2350 0    60   Input ~ 0
 BT1
-Text GLabel 7925 4725 0    60   Input ~ 0
+Text GLabel 8525 2825 0    60   Input ~ 0
 BT2
-Text GLabel 7925 5225 0    60   Input ~ 0
+Text GLabel 8525 3325 0    60   Input ~ 0
 BT3
-Text GLabel 7925 5700 0    60   Input ~ 0
+Text GLabel 8525 3800 0    60   Input ~ 0
 BT4
 $Comp
 L birduino-kicad-rescue:Conn_01x04 J4
 U 1 1 5C7EE845
-P 8950 1850
-F 0 "J4" H 8950 2050 50  0000 C CNN
-F 1 "Conn_01x04" H 8950 1550 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8950 1850 50  0001 C CNN
-F 3 "" H 8950 1850 50  0001 C CNN
-	1    8950 1850
+P 8725 925
+F 0 "J4" H 8725 1125 50  0000 C CNN
+F 1 "Conn_01x04" H 8725 625 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8725 925 50  0001 C CNN
+F 3 "" H 8725 925 50  0001 C CNN
+	1    8725 925 
 	1    0    0    -1  
 $EndComp
-Text GLabel 8750 1750 0    60   Input ~ 0
+Text GLabel 8525 825  0    60   Input ~ 0
 VCC
 $Comp
 L power:GND #PWR04
 U 1 1 5C7EE8FF
-P 8500 1850
-F 0 "#PWR04" H 8500 1600 50  0001 C CNN
-F 1 "GND" H 8500 1700 50  0000 C CNN
-F 2 "" H 8500 1850 50  0001 C CNN
-F 3 "" H 8500 1850 50  0001 C CNN
-	1    8500 1850
+P 8275 925
+F 0 "#PWR04" H 8275 675 50  0001 C CNN
+F 1 "GND" H 8275 775 50  0000 C CNN
+F 2 "" H 8275 925 50  0001 C CNN
+F 3 "" H 8275 925 50  0001 C CNN
+	1    8275 925 
 	0    1    1    0   
 $EndComp
-Text GLabel 8750 1950 0    60   Input ~ 0
+Text GLabel 8525 1025 0    60   Input ~ 0
 SCL
 Text GLabel 6525 3575 2    60   Input ~ 0
 SCL
 Text GLabel 6525 3475 2    60   Input ~ 0
 SDA
-Text GLabel 8750 2050 0    60   Input ~ 0
+Text GLabel 8525 1125 0    60   Input ~ 0
 SDA
 Wire Wire Line
 	6850 3675 6525 3675
@@ -330,31 +330,31 @@ Wire Wire Line
 	5650 1850 5650 1725
 Connection ~ 5650 1725
 Wire Wire Line
-	9175 2975 9350 2975
+	10375 950  10550 950 
 Wire Wire Line
-	9350 2975 9350 2775
+	10550 950  10550 750 
 Wire Wire Line
-	9350 2775 8525 2775
+	10550 750  9725 750 
 Wire Wire Line
-	8525 2775 8525 2875
+	9725 750  9725 850 
 Wire Wire Line
-	8525 2975 8675 2975
+	9725 950  9875 950 
 Wire Wire Line
-	8400 2875 8525 2875
-Connection ~ 8525 2875
+	9600 850  9725 850 
+Connection ~ 9725 850 
 Wire Wire Line
-	8675 3375 8375 3375
+	9875 1350 9575 1350
 Wire Wire Line
-	8375 3375 8375 3575
+	9575 1350 9575 1550
 Wire Wire Line
-	8375 3575 8700 3575
+	9575 1550 9900 1550
 Wire Wire Line
-	9450 3575 9450 3375
+	10650 1550 10650 1350
 Wire Wire Line
-	9450 3375 9175 3375
+	10650 1350 10375 1350
 Wire Wire Line
-	8700 3675 8700 3575
-Connection ~ 8700 3575
+	9900 1650 9900 1550
+Connection ~ 9900 1550
 Wire Wire Line
 	6850 2300 7175 2300
 Wire Wire Line
@@ -362,61 +362,61 @@ Wire Wire Line
 Wire Wire Line
 	6750 2150 6850 2150
 Wire Wire Line
-	8475 3175 8675 3175
+	9675 1150 9875 1150
 Wire Wire Line
-	9175 3175 9450 3175
+	10375 1150 10650 1150
 Wire Wire Line
-	8325 4450 8550 4450
+	8925 2550 9150 2550
 Wire Wire Line
-	8325 4925 8550 4925
+	8925 3025 9150 3025
 Wire Wire Line
-	8325 5425 8550 5425
+	8925 3525 9150 3525
 Wire Wire Line
-	8325 5900 8550 5900
+	8925 4000 9150 4000
 Wire Wire Line
-	8850 4450 9025 4450
+	9450 2550 9625 2550
 Wire Wire Line
-	9025 4450 9025 4925
+	9625 2550 9625 3025
 Wire Wire Line
-	8850 4925 9025 4925
-Connection ~ 9025 4925
+	9450 3025 9625 3025
+Connection ~ 9625 3025
 Wire Wire Line
-	8850 5425 9025 5425
-Connection ~ 9025 5425
+	9450 3525 9625 3525
+Connection ~ 9625 3525
 Wire Wire Line
-	8850 5900 9025 5900
-Connection ~ 9025 5900
+	9450 4000 9625 4000
+Connection ~ 9625 4000
 Wire Wire Line
-	8500 1850 8750 1850
+	8275 925  8525 925 
 Wire Notes Line
-	8225 2225 9200 2225
+	8000 1300 8975 1300
 Wire Notes Line
-	9200 2225 9200 1600
+	8975 1300 8975 675 
 Wire Notes Line
-	9200 1600 8225 1600
+	8975 675  8000 675 
 Wire Notes Line
-	8225 1600 8225 2225
-Text Notes 8450 1550 0    60   ~ 0
+	8000 675  8000 1300
+Text Notes 8225 625  0    60   ~ 0
 Display Oled
 Wire Notes Line
-	8075 3950 9725 3950
+	9275 1925 10925 1925
 Wire Notes Line
-	9725 3950 9725 2675
+	10925 1925 10925 650 
 Wire Notes Line
-	9725 2675 8075 2675
+	10925 650  9275 650 
 Wire Notes Line
-	8075 2675 8075 3950
-Text Notes 8600 2625 0    60   ~ 0
+	9275 650  9275 1925
+Text Notes 9800 600  0    60   ~ 0
 Radio Card
 Wire Notes Line
-	7500 4075 9175 4075
+	8100 2175 9775 2175
 Wire Notes Line
-	9175 4075 9175 6300
+	9775 2175 9775 4400
 Wire Notes Line
-	9175 6300 7500 6300
+	9775 4400 8100 4400
 Wire Notes Line
-	7500 6300 7500 4075
-Text Notes 9250 5150 0    60   ~ 0
+	8100 4400 8100 2175
+Text Notes 8675 2075 0    60   ~ 0
 Buttons
 Wire Notes Line
 	7225 2100 7775 2100
@@ -447,15 +447,15 @@ Wire Wire Line
 Wire Wire Line
 	5650 1725 6750 1725
 Wire Wire Line
-	8525 2875 8525 2975
+	9725 850  9725 950 
 Wire Wire Line
-	8700 3575 9450 3575
+	9900 1550 10650 1550
 Wire Wire Line
-	9025 4925 9025 5425
+	9625 3025 9625 3525
 Wire Wire Line
-	9025 5425 9025 5900
+	9625 3525 9625 4000
 Wire Wire Line
-	9025 5900 9025 6075
+	9625 4000 9625 4175
 $Comp
 L Sensor_Temperature:DS18B20 U2
 U 1 1 5C83DD01
@@ -851,4 +851,45 @@ Wire Notes Line
 	2450 5775 1500 5775
 Wire Notes Line
 	1500 5775 1500 5450
+$Sheet
+S 7300 4725 1150 1000
+U 5CAB74DF
+F0 "StepUp5V" 50
+F1 "StepUp5V.sch" 50
+F2 "VCC" I L 7300 5025 50 
+F3 "GND" I L 7300 5175 50 
+F4 "5V" O R 8450 5000 50 
+$EndSheet
+$Comp
+L power:GND #PWR0107
+U 1 1 5CABE80D
+P 7100 5325
+F 0 "#PWR0107" H 7100 5075 50  0001 C CNN
+F 1 "GND" H 7105 5152 50  0000 C CNN
+F 2 "" H 7100 5325 50  0001 C CNN
+F 3 "" H 7100 5325 50  0001 C CNN
+	1    7100 5325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 5325 7100 5175
+Wire Wire Line
+	7100 5175 7300 5175
+Text GLabel 7150 5025 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	7150 5025 7300 5025
+$Comp
+L Connector:Conn_01x01_Male J11
+U 1 1 5CAC564A
+P 8950 5000
+F 0 "J11" H 9056 5178 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 9056 5087 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8950 5000 50  0001 C CNN
+F 3 "~" H 8950 5000 50  0001 C CNN
+	1    8950 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8450 5000 8750 5000
 $EndSCHEMATC
