@@ -5,9 +5,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
-Title ""
-Date ""
-Rev ""
+Title "Birduino"
+Date "2019-04-13"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""

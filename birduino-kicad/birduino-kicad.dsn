@@ -39,12 +39,13 @@
     (component Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
       (place J2 135128 -144780 front 0 (PN Conn_01x02_Male))
       (place J9 131826 -94742 front 0 (PN Conn_01x02))
+      (place J10 131826 -103378 front 90 (PN Conn_01x02_Male))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical
       (place J3 161036 -147574 front 90 (PN Conn_02x05_Odd_Even))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
-      (place J4 155448 -82804 front 270 (PN Conn_01x04))
+      (place J4 155702 -82042 front 270 (PN Conn_01x04))
     )
     (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal
       (place R1 165354 -136906 front 180 (PN 10k))
@@ -60,11 +61,11 @@
       (place R8 160274 -119380 front 0 (PN 10k))
     )
     (component Button_Switch_THT:SW_Tactile_Straight_KSA0Axx1LFTR
-      (place SW1 139954 -94234 front 0 (PN SW_Push_Dual))
+      (place SW1 139192 -94234 front 0 (PN SW_Push_Dual))
       (place SW3 161798 -94234 front 0 (PN SW_Push_Dual))
     )
     (component Button_Switch_THT:SW_Tactile_Straight_KSA0Axx1LFTR::1
-      (place SW2 139954 -103632 front 0 (PN SW_Push_Dual))
+      (place SW2 139192 -103632 front 0 (PN SW_Push_Dual))
       (place SW4 161798 -104140 front 0 (PN SW_Push_Dual))
     )
     (component "Package_DIP:DIP-28_W7.62mm"
@@ -81,7 +82,6 @@
     (component Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical
       (place J5 139700 -85598 front 0 (PN Conn_01x01_Male))
       (place J6 132080 -85598 front 0 (PN Conn_01x01_Male))
-      (place J10 131826 -103378 front 0 (PN Conn_01x01_Male))
       (place J11 172466 -94742 front 0 (PN Conn_01x01_Male))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical::1
@@ -91,7 +91,7 @@
       (place J8 167132 -85344 front 0 (PN Conn_02x02_Odd_Even))
     )
     (component Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm
-      (place C1 172974 -105664 front 90 (PN 0.1uF))
+      (place C1 172466 -103124 front 90 (PN 0.1uF))
     )
     (component Capacitor_THT:CP_Radial_D6.3mm_P2.50mm
       (place C2 131826 -120904 front 0 (PN 100uF))
@@ -103,10 +103,19 @@
       (place L1 155194 -147828 front 90 (PN 22uH))
     )
     (component "Package_DIP:DIP-8_W7.62mm"
-      (place U3 151130 -97790 front 0 (PN MAX756CPA))
+      (place U3 150622 -103124 front 0 (PN MAX756CPA))
     )
     (component Capacitor_THT:C_Radial_D8.0mm_H7.0mm_P3.50mm
       (place C3 131572 -111506 front 0 (PN 150uF))
+    )
+    (component Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm
+      (place C4 145876 -88900 front 0 (PN 22uF))
+    )
+    (component Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm::1
+      (place C5 154940 -88900 front 0 (PN 22uF))
+    )
+    (component "Crystal:Crystal_HC49-4H_Vertical"
+      (place Y1 156718 -96266 front 180 (PN Crystal))
     )
   )
   (library
@@ -698,6 +707,56 @@
       (pin Round[A]Pad_1600_um 1 0 0)
       (pin Round[A]Pad_1600_um 2 3500 0)
     )
+    (image Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm
+      (outline (path signal 100  -500 1250  -500 -1250))
+      (outline (path signal 100  -500 -1250  5500 -1250))
+      (outline (path signal 100  5500 -1250  5500 1250))
+      (outline (path signal 100  5500 1250  -500 1250))
+      (outline (path signal 120  -620 1370  5620 1370))
+      (outline (path signal 120  -620 -1370  5620 -1370))
+      (outline (path signal 120  -620 1370  -620 925))
+      (outline (path signal 120  -620 -925  -620 -1370))
+      (outline (path signal 120  5620 1370  5620 925))
+      (outline (path signal 120  5620 -925  5620 -1370))
+      (outline (path signal 50  -1050 1500  -1050 -1500))
+      (outline (path signal 50  -1050 -1500  6050 -1500))
+      (outline (path signal 50  6050 -1500  6050 1500))
+      (outline (path signal 50  6050 1500  -1050 1500))
+      (pin Round[A]Pad_1600_um 1 0 0)
+      (pin Round[A]Pad_1600_um 2 5000 0)
+    )
+    (image Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm::1
+      (outline (path signal 50  6050 1500  -1050 1500))
+      (outline (path signal 50  6050 -1500  6050 1500))
+      (outline (path signal 50  -1050 -1500  6050 -1500))
+      (outline (path signal 50  -1050 1500  -1050 -1500))
+      (outline (path signal 120  5620 -925  5620 -1370))
+      (outline (path signal 120  5620 1370  5620 925))
+      (outline (path signal 120  -620 -925  -620 -1370))
+      (outline (path signal 120  -620 1370  -620 925))
+      (outline (path signal 120  -620 -1370  5620 -1370))
+      (outline (path signal 120  -620 1370  5620 1370))
+      (outline (path signal 100  5500 1250  -500 1250))
+      (outline (path signal 100  5500 -1250  5500 1250))
+      (outline (path signal 100  -500 -1250  5500 -1250))
+      (outline (path signal 100  -500 1250  -500 -1250))
+      (pin Round[A]Pad_1600_um 2 5000 0)
+      (pin Round[A]Pad_1600_um 1 0 0)
+    )
+    (image "Crystal:Crystal_HC49-4H_Vertical"
+      (outline (path signal 100  -760 2325  5640 2325))
+      (outline (path signal 100  -760 -2325  5640 -2325))
+      (outline (path signal 100  -560 2000  5440 2000))
+      (outline (path signal 100  -560 -2000  5440 -2000))
+      (outline (path signal 120  -760 2525  5640 2525))
+      (outline (path signal 120  -760 -2525  5640 -2525))
+      (outline (path signal 50  -3600 2800  -3600 -2800))
+      (outline (path signal 50  -3600 -2800  8500 -2800))
+      (outline (path signal 50  8500 -2800  8500 2800))
+      (outline (path signal 50  8500 2800  -3600 2800))
+      (pin Round[A]Pad_1500_um 1 0 0)
+      (pin Round[A]Pad_1500_um 2 4880 0)
+    )
     (padstack Round[A]Pad_1397_um
       (shape (circle F.Cu 1397))
       (shape (circle B.Cu 1397))
@@ -706,6 +765,11 @@
     (padstack Round[A]Pad_1400_um
       (shape (circle F.Cu 1400))
       (shape (circle B.Cu 1400))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1500_um
+      (shape (circle F.Cu 1500))
+      (shape (circle B.Cu 1500))
       (attach off)
     )
     (padstack Round[A]Pad_1600_um
@@ -786,7 +850,7 @@
     )
     (net GND
       (pins J2-1 J3-9 J3-10 J4-2 R2-1 R3-1 R4-1 R5-1 U1-8 U1-22 Q1-1 Q2-1 Q3-1 R7-2
-        R8-2 R9-2 U2-1 J8-1 J9-2 C1-2 C2-2 U3-2 U3-7 C3-2)
+        R8-2 R9-2 U2-1 J8-1 J9-2 C1-2 C2-2 U3-2 U3-7 C3-2 C4-2 C5-1)
     )
     (net VCC
       (pins J2-2 J3-1 J3-2 J4-1 R1-2 R6-2 SW1-2 SW1-2@1 SW2-2 SW2-2@1 SW3-2 SW3-2@1
@@ -861,12 +925,20 @@
     (net "Net-(D1-Pad2)"
       (pins D1-2 L1-2 U3-8)
     )
-    (class kicad_default "" /StepUp5V/5V BT1 BT2 BT3 BT4 CE CSN FREE GND LED1
-      LED2 LED3 MI MO "Net-(C1-Pad1)" "Net-(D1-Pad2)" "Net-(J1-Pad1)" "Net-(J1-Pad2)"
-      "Net-(J1-Pad3)" "Net-(J3-Pad8)" "Net-(J5-Pad1)" "Net-(J6-Pad1)" "Net-(J7-Pad1)"
-      "Net-(R2-Pad2)" "Net-(R3-Pad2)" "Net-(R4-Pad2)" "Net-(R5-Pad2)" "Net-(U1-Pad10)"
-      "Net-(U1-Pad16)" "Net-(U1-Pad21)" "Net-(U1-Pad9)" "Net-(U3-Pad4)" PUMP
-      SCK SCL SDA TEMP VCC
+    (net XTAL1
+      (pins U1-9 C4-1 Y1-1)
+    )
+    (net XTAL2
+      (pins U1-10 C5-2 Y1-2)
+    )
+    (net FREE2
+      (pins U1-16 J10-2)
+    )
+    (class kicad_default "" /StepUp5V/5V BT1 BT2 BT3 BT4 CE CSN FREE FREE2
+      GND LED1 LED2 LED3 MI MO "Net-(C1-Pad1)" "Net-(D1-Pad2)" "Net-(J1-Pad1)"
+      "Net-(J1-Pad2)" "Net-(J1-Pad3)" "Net-(J3-Pad8)" "Net-(J5-Pad1)" "Net-(J6-Pad1)"
+      "Net-(J7-Pad1)" "Net-(R2-Pad2)" "Net-(R3-Pad2)" "Net-(R4-Pad2)" "Net-(R5-Pad2)"
+      "Net-(U1-Pad21)" "Net-(U3-Pad4)" PUMP SCK SCL SDA TEMP VCC XTAL1 XTAL2
       (circuit
         (use_via Via[0-1]_600:400_um)
       )
@@ -877,8 +949,10 @@
     )
   )
   (wiring
+    (via "Via[0-1]_600:400_um"  135768 -115125 (net "Net-(J1-Pad1)")(type protect))
     (via "Via[0-1]_600:400_um"  156504 -99329.1 (net "Net-(J5-Pad1)")(type protect))
     (via "Via[0-1]_600:400_um"  155003 -99854.6 (net "Net-(J6-Pad1)")(type protect))
     (via "Via[0-1]_600:400_um"  154721 -98804.9 (net "Net-(J7-Pad1)")(type protect))
+    (via "Via[0-1]_600:400_um"  148913 -103688 (net PUMP)(type protect))
   )
 )
