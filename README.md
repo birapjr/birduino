@@ -4,12 +4,15 @@ Prototype board for common projects
 The PCB images:
 
 3D view
+
 ![birduino 1.0 PCB](images/birduino1.0.pcb.png)
 
 Front
+
 ![birduino 1.0 PCB front](images/birduino1.0.pcb.front.png)
 
 Back
+
 ![birduino 1.0 PCB back](images/birduino1.0.pcb.back.png)
 
 Main features:
