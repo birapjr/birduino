@@ -1,6 +1,8 @@
 # birduino
 Prototype board for common projects
 
+Current version: 1.1
+
 The PCB images:
 
 3D view
@@ -26,5 +28,5 @@ Main features:
   * Setup output: 5V
   * Power controls: 3 MOSFET 2N7000
   * Analog reader: 1 pin at J9
-  * Free pins: 1
+  * Free pins: 2, D6 and D10
   * Programming: Onboard serial programming
