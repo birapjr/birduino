@@ -6,13 +6,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
 Title "Birduino"
-Date "2019-04-13"
-Rev "1.0"
+Date "2019-04-16"
+Rev "1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Author: Ubirajara Cortes"
 $EndDescr
 $Comp
 L MAX756CPA:MAX756CPA U3
