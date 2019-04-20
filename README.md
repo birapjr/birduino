@@ -19,7 +19,7 @@ Back
 
 Main features:
 
-  * Micro-controler: ATMEGA328
+  * Micro-controller: ATMEGA328
   * Main voltage: 3.7 V
   * Radio card: nRF24L01
   * Sensor: Temperature DS18B20
