@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# ATMEGA328-PU
+# birduino-kicad-rescue_ATMEGA328-PU
 #
-DEF ATMEGA328-PU U 0 40 Y Y 1 F N
+DEF birduino-kicad-rescue_ATMEGA328-PU U 0 40 Y Y 1 F N
 F0 "U" -750 1250 50 H V L BNN
-F1 "ATMEGA328-PU" 400 -1400 50 H V L BNN
+F1 "birduino-kicad-rescue_ATMEGA328-PU" 400 -1400 50 H V L BNN
 F2 "DIL28" 0 0 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -45,11 +45,11 @@ X (PCINT6/XTAL1/TOSC1)PB6 9 1000 500 150 L 40 40 1 1 B
 ENDDRAW
 ENDDEF
 #
-# Conn_01x02_Male
+# birduino-kicad-rescue_Conn_01x02_Male
 #
-DEF Conn_01x02_Male J 0 40 Y N 1 F N
+DEF birduino-kicad-rescue_Conn_01x02_Male J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "Conn_01x02_Male" 0 -200 50 H V C CNN
+F1 "birduino-kicad-rescue_Conn_01x02_Male" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -68,11 +68,11 @@ X Pin_2 2 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Conn_01x03_Male
+# birduino-kicad-rescue_Conn_01x03_Male
 #
-DEF Conn_01x03_Male J 0 40 Y N 1 F N
+DEF birduino-kicad-rescue_Conn_01x03_Male J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Conn_01x03_Male" 0 -200 50 H V C CNN
+F1 "birduino-kicad-rescue_Conn_01x03_Male" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -94,11 +94,11 @@ X Pin_3 3 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Conn_01x04
+# birduino-kicad-rescue_Conn_01x04
 #
-DEF Conn_01x04 J 0 40 Y N 1 F N
+DEF birduino-kicad-rescue_Conn_01x04 J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Conn_01x04" 0 -300 50 H V C CNN
+F1 "birduino-kicad-rescue_Conn_01x04" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -122,11 +122,11 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Conn_02x05_Odd_Even
+# birduino-kicad-rescue_Conn_02x05_Odd_Even
 #
-DEF Conn_02x05_Odd_Even J 0 40 Y N 1 F N
+DEF birduino-kicad-rescue_Conn_02x05_Odd_Even J 0 40 Y N 1 F N
 F0 "J" 50 300 50 H V C CNN
-F1 "Conn_02x05_Odd_Even" 50 -300 50 H V C CNN
+F1 "birduino-kicad-rescue_Conn_02x05_Odd_Even" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -162,39 +162,11 @@ X Pin_9 9 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MAX756CPA-MAX756CPA
+# birduino-kicad-rescue_R
 #
-DEF MAX756CPA-MAX756CPA U 0 40 Y Y 1 L N
-F0 "U" 1016 360 50 H V L BNN
-F1 "MAX756CPA-MAX756CPA" 991 260 50 H V L BNN
-F2 "21-0043D_8" 0 0 50 H I L BNN
-F3 "Conv DC-DC Single Step Up 0.7V to 8-Pin PDIP N" 0 0 50 H I L BNN
-F4 "Maxim Integrated" 0 0 50 H I L BNN
-F5 "Good" 0 0 50 H I L BNN
-F6 "MAX756CPA+" 0 0 50 H I L BNN
-F7 "DIP-8 Maxim Integrated" 0 0 50 H I L BNN
-F8 "3.50 USD" 0 0 50 H I L BNN
-DRAW
-P 2 0 0 6 300 -500 2100 -500 N
-P 2 0 0 6 300 200 300 -500 N
-P 2 0 0 6 2100 -500 2100 200 N
-P 2 0 0 6 2100 200 300 200 N
-X *SHDN 1 0 0 300 R 40 40 0 0 I
-X 3/*5 2 0 -100 300 R 40 40 0 0 P
-X REF 3 0 -200 300 R 40 40 0 0 O
-X LBO 4 0 -300 300 R 40 40 0 0 O
-X LBI 5 2400 -300 300 L 40 40 0 0 I
-X OUT 6 2400 -200 300 L 40 40 0 0 O
-X GND 7 2400 -100 300 L 40 40 0 0 W
-X LX 8 2400 0 300 L 40 40 0 0 P
-ENDDRAW
-ENDDEF
-#
-# R
-#
-DEF R R 0 0 N Y 1 F N
+DEF birduino-kicad-rescue_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "R" 0 0 50 V V C CNN
+F1 "birduino-kicad-rescue_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -208,11 +180,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# SW_Push_Dual
+# birduino-kicad-rescue_SW_Push_Dual
 #
-DEF SW_Push_Dual SW 0 40 Y N 1 F N
+DEF birduino-kicad-rescue_SW_Push_Dual SW 0 40 Y N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "SW_Push_Dual" 0 -270 50 H V C CNN
+F1 "birduino-kicad-rescue_SW_Push_Dual" 0 -270 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW
@@ -232,6 +204,34 @@ X 1 1 -200 0 100 R 50 50 0 1 P
 X 2 2 200 0 100 L 50 50 0 1 P
 X 3 3 -200 -200 100 R 50 50 0 1 P
 X 4 4 200 -200 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# power_+3V8
+#
+DEF power_+3V8 #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3V8" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V8 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
